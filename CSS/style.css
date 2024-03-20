@@ -1,5 +1,5 @@
 :root{
-  --primary-color: #c72727;
+  --primary-color: #333;
   --secondary-color: #f99500;
   --light-color: #f1f1f1;
   --dark-color: #333;
@@ -63,6 +63,10 @@ h1,h2,h3,h4,h5,h6{
 }
 .category-tech{
   background: var(--tech-color);
+}
+.articles-container h3:hover {
+  text-decoration: underline;
+  color: darkorange;
 }
 .btn{
   display: inline-block;
@@ -330,22 +334,3 @@ h1,h2,h3,h4,h5,h6{
   width: 90%;
 }
 
-@media(max-width: 600px){
-  /* Navigation Bar for Mobile */
-  #main-nav {
-    padding: 0.5rem 0; /* Reduce el padding vertical */
-  }
-
-  #main-nav ul {
-    justify-self: center; /* Centra horizontalmente la lista de navegación */
-    margin-top: 0.5rem; /* Agrega un poco de espacio entre el logo y la lista de navegación */
-  }
-
-  #main-nav ul li {
-    margin-right: 0.5rem; /* Reduce el margen entre elementos del menú */
-  }
-
-  #main-nav ul li a {
-    padding: 0.3rem; /* Reduce el padding de los enlaces */
-  }
-}
