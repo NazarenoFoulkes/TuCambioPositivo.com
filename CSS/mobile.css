@@ -62,11 +62,20 @@
   .page-container{
     grid-template-columns: 1fr;
   }
-}
 
-@media(max-width: 400px){ /* Cambiar el ancho máximo a 400px */
-  /* Articles Grid */
-  #home-articles .articles-container {
+  /* Navigation bar */
+  #main-nav .container {
     grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    justify-items: center; /* Centrar los elementos horizontalmente */
+    text-align: center; /* Centrar el texto dentro de la lista */
+  }
+
+  #main-nav ul {
+    justify-self: center; /* Centrar la lista de navegación */
+    margin-top: 0.5rem; /* Agregar espacio entre el nombre del sitio y la lista de navegación */
+  }
+
+  #main-nav .site-name {
+    justify-self: center; /* Centrar el título del sitio */
   }
 }
