@@ -78,4 +78,9 @@
   #main-nav .site-name {
     justify-self: center; /* Centrar el título del sitio */
   }
+
+  /* Header */
+  #showcase .showcase-container {
+    text-align: center; /* Centrar el contenido del encabezado */
+  }
 }
