@@ -329,3 +329,23 @@ h1,h2,h3,h4,h5,h6{
 #main-footer .footer-container input[type='submit']{
   width: 90%;
 }
+
+@media(max-width: 600px){
+  /* Navigation Bar for Mobile */
+  #main-nav {
+    padding: 0.5rem 0; /* Reduce el padding vertical */
+  }
+
+  #main-nav ul {
+    justify-self: center; /* Centra horizontalmente la lista de navegación */
+    margin-top: 0.5rem; /* Agrega un poco de espacio entre el logo y la lista de navegación */
+  }
+
+  #main-nav ul li {
+    margin-right: 0.5rem; /* Reduce el margen entre elementos del menú */
+  }
+
+  #main-nav ul li a {
+    padding: 0.3rem; /* Reduce el padding de los enlaces */
+  }
+}

@@ -1,17 +1,32 @@
 /* Navigation bar */
-#main-nav .social{
-  display: none;
+#main-nav {
+  padding: 0.5rem; /* Reducir el padding del navbar */
 }
-#main-nav .container{
-  grid-template-columns: 1fr;
-  grid-gap: 1.2rem;
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: auto auto 1fr; /* Ajustar las columnas para el logo, el nombre y la lista de navegación */
+  align-items: center; /* Alinear verticalmente los elementos del navbar */
 }
-#main-nav ul,
-#main-nav .logo{
-  justify-self: center;
+
+#main-nav .logo {
+  justify-self: start; /* Alinear el logo a la izquierda */
 }
-#main-nav ul li a{
-  padding: 0.5rem;
+
+#main-nav .site-name {
+  justify-self: end; /* Alinear el nombre del sitio a la derecha */
+}
+
+#main-nav ul {
+  justify-self: end; /* Alinear la lista de navegación a la derecha */
+}
+
+#main-nav ul li {
+  margin-right: 1rem; /* Agregar un poco de espacio entre elementos del menú */
+}
+
+#main-nav ul li a {
+  padding: 0.3rem; /* Reducir el padding de los enlaces del menú */
 }
 
 /* Articles */
