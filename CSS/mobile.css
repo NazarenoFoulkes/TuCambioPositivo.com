@@ -63,3 +63,63 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Navigation bar */
+#main-nav {
+  padding: 0.5rem; /* Reducir el padding del navbar */
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: auto auto 1fr; /* Ajustar las columnas para el logo, el nombre y la lista de navegación */
+  align-items: center; /* Alinear verticalmente los elementos del navbar */
+}
+
+#main-nav .logo {
+  justify-self: start; /* Alinear el logo a la izquierda */
+}
+
+#main-nav .site-name {
+  justify-self: end; /* Alinear el nombre del sitio a la derecha */
+}
+
+#main-nav ul {
+  justify-self: end; /* Alinear la lista de navegación a la derecha */
+}
+
+#main-nav ul li {
+  margin-right: 1rem; /* Agregar un poco de espacio entre elementos del menú */
+}
+
+#main-nav ul li a {
+  padding: 0.3rem; /* Reducir el padding de los enlaces del menú */
+}
+
+/* Articles */
+#home-articles .articles-container{
+  grid-template-columns: repeat(2, 1fr);
+}
+#home-articles .articles-container > *:first-child{
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+#home-articles .articles-container > *:last-child{
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+
+@media(max-width: 400px){ /* Cambiar el ancho máximo a 400px */
+  /* Navigation bar */
+  #main-nav .container {
+    grid-template-columns: auto 1fr; /* Ajustar las columnas para el logo y el nombre del sitio */
+  }
+
+  #main-nav ul {
+    justify-self: end; /* Alinear la lista de navegación a la derecha */
+    margin-top: 0.5rem; /* Agregar espacio entre el nombre del sitio y la lista de navegación */
+  }
+
+  #main-nav ul li {
+    margin-right: 0.5rem; /* Reducir el espacio entre elementos del menú */
+  }
+}
